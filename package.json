@@ -1,0 +1,17 @@
+{
+  "name": "unnamed",
+  "description": "unnamed-project",
+  "main": "server.js",
+  "dependencies": {
+    "express" : "~4.13.4",
+    "mongoose" : "~4.2.9",
+    "body-parser" : "~1.14.1",
+    "method-override" : "~2.0.2",
+    "nodemon": "^1.4.1"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/ilterates/unnamed-project"
+  },
+  "license": "MIT"
+}
