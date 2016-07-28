@@ -11,8 +11,8 @@ var Video = require('./models/video');
 
        // sample api route
        app.get('/api/videos', function(req, res) {
-           // use mongoose to get all nerds in the database
-           Nerd.find(function(err, videos) {
+           // use mongoose to get all videos in the database
+           Video.find(function(err, videos) {
 
                // if there is an error retrieving, send the error.
                                // nothing after res.send(err) will execute
