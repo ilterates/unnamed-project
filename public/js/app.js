@@ -1,2 +1,2 @@
 // public/js/app.js
-angular.module('unnamed', ['ngRoute', 'appRoutes', 'MainCtrl', 'VideoCtrl', 'VideoService']);
+var app = angular.module('unnamed', ['ngRoute', 'appRoutes', 'MainCtrl', 'VideoCtrl', 'VideoService']);
