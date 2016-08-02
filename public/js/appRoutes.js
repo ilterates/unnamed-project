@@ -6,15 +6,13 @@
         // home page
         .when('/', {
             templateUrl: 'views/home.html',
-            controller: 'MainController',
-            as: 'MainCtrl'
+            controller: 'MainController'
         })
 
         // videos page that will use the VideoController
         .when('/videos', {
             templateUrl: 'views/video.html',
-            controller: 'VideoController',
-            as: 'VideoCtrl'
+            controller: 'VideoController'
         });
 
     $locationProvider.html5Mode(true);
