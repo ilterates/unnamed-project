@@ -1,0 +1,22 @@
+<div class="container">
+  <h3>Add content</h3>
+  <form id="content-form" ng-submit="VideoCtrl.createVideo()">
+    <div class="form-group">
+      <label for="">Title</label>
+      <input ng-model="VideoCtrl.newConent.title" type="text" id="title" class="form-control input-md">
+    </div>
+    <div class="form-group">
+      <label for="">Url</label>
+      <input ng-model="VideoCtrl.newConent.url" type="text" id="url" class="form-control input-md">
+    </div>
+    <div class="form-group">
+      <label for="">Description</label>
+      <input ng-model="VideoCtrl.newContent.description" type="text" id="description" class="form-control input-md">
+    </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-primary" value="Submit">
+    </div>
+
+  </form>
+
+</div>
