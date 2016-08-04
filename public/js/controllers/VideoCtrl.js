@@ -4,11 +4,12 @@ angular.module('VideoCtrl', [])
 
   // $scope.tagline = 'Video video Video!';
 
-VideoController.$inject = ['$http'];
-  function VideoController ($http) {
+VideoController.$inject = [ '$http' ];
+  function VideoController  ($http) {
     var vm = this;
     var newContent = {};
     vm.createVideo = function () {
+      console.log("button clicked");
         $http({
           method: 'POST',
           url: 'https://api.mlab.com/api/1/databases/unnamed/collections/my-coll?apiKey=Mqu4oGAuzrqCOpQOkUyZArFXtBol-o04',

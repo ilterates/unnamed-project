@@ -1,22 +1,45 @@
 <div class="container">
-  <h3>Add content</h3>
-  <form id="content-form" ng-submit="VideoCtrl.createVideo()">
-    <div class="form-group">
-      <label for="">Title</label>
-      <input ng-model="VideoCtrl.newContent.title" type="text" id="title" class="form-control input-md">
-    </div>
-    <div class="form-group">
-      <label for="">Url</label>
-      <input ng-model="VideoCtrl.newContent.url" type="text" id="url" class="form-control input-md">
-    </div>
-    <div class="form-group">
-      <label for="">Description</label>
-      <input ng-model="VideoCtrl.newContent.description" type="text" id="description" class="form-control input-md">
-    </div>
-    <div class="form-group">
-      <input type="submit" class="btn btn-primary" value="Submit">
-    </div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
 
-  </form>
+      <form class="form-horizontal" ng-submit="VideoCtrl.createVideo()">
+        <fieldset>
 
-</div>
+          <!-- Form Name -->
+          <legend>Add New Content</legend>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label">Title</label>
+            <div class="col-md-4">
+            <input ng-model="VideoCtrl.newContent.title" type="text" id="title" class="form-control input-md">
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label">URL</label>
+            <div class="col-md-4">
+            <input ng-model="VideoCtrl.newContent.url" type="text" id="url" class="form-control input-md">
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label">description</label>
+            <div class="col-md-4">
+            <input ng-model="VideoCtrl.newContent.description" type="text" id="description" class="form-control input-md">
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label">Save</label>
+            <div class="col-md-4">
+              <button class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
