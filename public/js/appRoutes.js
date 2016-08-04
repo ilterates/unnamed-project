@@ -15,6 +15,11 @@
             templateUrl: 'views/video.html',
             controller: 'VideoController',
             as: 'VideoCtrl'
+        })
+        .when('/content', {
+            templateUrl: 'views/content.html',
+            controller: 'ContentController',
+            as: 'ContentCtrl'
         });
 
     $locationProvider.html5Mode(true);
