@@ -1,0 +1,14 @@
+.coming-soon {
+  text-align: center;
+  margin-top: +50%;
+}
+.cubes {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: 30%;
+  width: 30%;
+}
