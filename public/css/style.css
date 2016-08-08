@@ -18,3 +18,9 @@
  right: -20px;
  bottom: -20px;
 }
+.bottom .left {
+  border-top: 0px;
+}
+.top .right {
+  border-left: 0px;
+}

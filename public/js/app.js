@@ -24,13 +24,19 @@ var app = angular.module('unnamed', ['ngRoute', 'appRoutes', 'MainCtrl', 'VideoC
   //    }
   //   } );
 // });
-$(window).on("mousemove", function() {
-$("#moving").animate({left: "-20px"})
-            .animate({bottom: "20px"})
-            .fadeOut();
-  setTimeout(wait, 1000);
-  $("#moving").css("left","+20px")
-              .css("bottom", "+20px")
-              .fadeOut();
-
+var hidden = false;
+$(window).on('mousemove', function() {
+  if (hidden === false) {
+    $("#moving").animate({left: "-20px"})
+                .animate({bottom: "20px"})
+                .fadeOut( 500 );
+     setTimeout(500);
+     hidden = true;
+ } else {
+  $("#moving").animate({left: "20px"})
+              .animate({bottom: "-20px"})
+              .fadeIn( 500 );
+   hidden = false;
+ }
 });
+$(window).click(movement).done(movement);
