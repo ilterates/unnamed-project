@@ -24,3 +24,13 @@ var app = angular.module('unnamed', ['ngRoute', 'appRoutes', 'MainCtrl', 'VideoC
   //    }
   //   } );
 // });
+$(window).on("mousemove", function() {
+$("#moving").animate({left: "-20px"})
+            .animate({bottom: "20px"})
+            .fadeOut();
+  setTimeout(wait, 1000);
+  $("#moving").css("left","+20px")
+              .css("bottom", "+20px")
+              .fadeOut();
+
+});
