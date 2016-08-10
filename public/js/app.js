@@ -25,7 +25,7 @@ var app = angular.module('unnamed', ['ngRoute', 'appRoutes', 'MainCtrl', 'VideoC
   //   } );
 // });
 var hidden = false;
-$(window).on('mousemove', function() {
+$(window).on('mousemove', function movement() {
   if (hidden === false) {
     $("#moving").animate({left: "-20px"})
                 .animate({bottom: "20px"})

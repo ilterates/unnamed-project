@@ -1,26 +1,32 @@
 // public/js/controllers/VideoCtrl.js
 angular.module('VideoCtrl', [])
-  .controller('VideoController', ['$scope', function($scope) {
+  .controller('VideoController', ['$scope', '$http', '$injector', function($scope, $http, $injector) {
 
-  // $scope.tagline = 'Video video Video!';
+  $scope.posting = function () {
+    console.log("testing");
+    var vm = this;
+    var newContent = {};
 
-VideoController.$inject = [ '$http' ];
-  function VideoController  ($http) {
-    // var vm = this;
-    // var newContent = {};
-    $scope.createVideo = function() {
-      console.log("button clicked");
-        $http({
-          method: 'POST',
-          url: 'https://api.mlab.com/api/1/databases/unnamed/collections/my-coll?apiKey=Mqu4oGAuzrqCOpQOkUyZArFXtBol-o04',
-          data: this.newContent,
-        }).then(function successCallback(response) {
-          vm.newContent.push(response.data);
-          console.log("success");
-        }, function errorCallback(response) {
-          console.log('There was an error posting the data', response);
-        });
+    console.log("button clicked");
+      $http({
+        method: 'POST',
+        url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA',
+        data: JSON.stringify({
+          title      : $('#title').val(),
+          link       : $('#link').val(),
+          description: $('#description').val()
+        }),
+        contentType: "application/json"
+      }).then(function successCallback(response) {
+        console.log(response.data);
+        console.log("success");
+      }, function errorCallback(response) {
+        console.log('There was an error posting the data', response);
+      });
 
-    };
-  }
+
+  };
+  var fake = function(){
+    console.log("testing the function call");
+  };
 }]);
