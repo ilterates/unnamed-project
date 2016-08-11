@@ -23,4 +23,11 @@ angular.module('VideoCtrl', [])
       console.log('There was an error posting the data', response);
     });
   };
+
+  $http.get("https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA")
+    .success(function(response) {
+        $scope.myobj = response;
+  });
+
+
 }]);
