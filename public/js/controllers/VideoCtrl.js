@@ -24,10 +24,15 @@ angular.module('VideoCtrl', [])
     });
   };
 
-  $http.get("https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA")
-    .success(function(response) {
-        $scope.myobj = response;
-  });
+  // $http.get("https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA")
+  //   .success(function(response) {
+  //       $scope.myobj = response;
+  // });
 
+  // this is the longer version of the $http get service
+  $http.get("https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA")
+  .then(function(response) {
+      $scope.myobj = response.data;
+  });
 
 }]);
