@@ -24,13 +24,17 @@ angular.module('VideoCtrl', [])
       });
 
   };
+
+
+
   $scope.fetch = function () {
+    console.log("is this fetch working?");
     var vm = this;
     $http({
       method: 'GET',
       url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA',
     }).then(function getSuccessCallback(response) {
-      var videos = response.data;
+      $scope.videos = response.data;
       var today = videos[videos.length-1];
       console.log(today);
     }, function getErrorCallback(response) {
@@ -38,6 +42,7 @@ angular.module('VideoCtrl', [])
     });
 
   };
+
 
 
 }]);
