@@ -6,7 +6,7 @@ angular.module('VideoCtrl', [])
     console.log("button clicked");
       $http({
         method: 'POST',
-        url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey='+MLAB_API_KEY,
+        url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=DtPYymGWE-ferzPHl2eQhkjsh0dH4_54',
         data: JSON.stringify({
           title      : $('#title').val(),
           link       : $('#link').val(),
@@ -26,7 +26,7 @@ angular.module('VideoCtrl', [])
     var vm = this;
     $http({
       method: 'GET',
-      url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA',
+      url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=DtPYymGWE-ferzPHl2eQhkjsh0dH4_54',
     }).then(function getSuccessCallback(response) {
       $scope.lenght = Object.keys(response.data).reverse()[0];
       $scope.data = response.data;

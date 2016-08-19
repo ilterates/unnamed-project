@@ -16,8 +16,9 @@ var db = require('./config/db');
 // set our port
 var port = process.env.PORT || 9000;
 
+
 // Mlab Api Keys
-var apiKey = process.env.MLAB_API_KEY;
+// var mlabKey = process.env.MLAB_API_KEY;
 // connect to our mongoDB database
 // (uncomment after you enter in your own credentials in config/db.js)
 // mongoose.connect(db.url);
