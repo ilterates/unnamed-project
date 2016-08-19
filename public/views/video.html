@@ -1,10 +1,11 @@
 <!-- public/views/video.html -->
 
-<div class="jumbotron text-center" ng-controller="VideoController" data-ng-init="fetch()">
+<div class="jumbotron text-center" data-ng-init="fetch()">
     <h1>This is from the video.html</h1>
 </div>
-
-<span ng-repeat="data in response.data">
+<div class="videoShow" ng-repeat="data in data track by $index">
+  <span ng-show="$last">
   {{data.title}}
   {{data.link}}
-</span>
+  </span>
+</div>

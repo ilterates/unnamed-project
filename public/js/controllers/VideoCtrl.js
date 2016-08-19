@@ -30,6 +30,7 @@ angular.module('VideoCtrl', [])
       url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA',
     }).then(function getSuccessCallback(response) {
       $scope.lenght = Object.keys(response.data).reverse()[0];
+      $scope.data = response.data;
       console.log($scope.lenght);
       console.log(response.data[$scope.lenght]);
       // console.log(response.data);
