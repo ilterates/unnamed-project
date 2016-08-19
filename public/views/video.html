@@ -1,6 +1,8 @@
 <!-- public/views/video.html -->
 
-<div class="jumbotron text-center" data-ng-init="fetch()">
+<div class="jumbotron text-center" ng-controller="VideoController" data-ng-init="fetch()">
     <h1>This is from the video.html</h1>
-    
+      <p>
+        {{$scope.lenght.link}}
+      </p>
 </div>
