@@ -31,7 +31,7 @@ angular.module('VideoCtrl', [])
       url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA',
     }).then(function getSuccessCallback(response) {
       var videos = response.data;
-      var today = videos[videos.lenght-1];
+      var today = videos[videos.length-1];
       console.log(today);
     }, function getErrorCallback(response) {
       console.log('There was an error getting the data', response);
