@@ -6,7 +6,7 @@ angular.module('VideoCtrl', [])
     console.log("button clicked");
       $http({
         method: 'POST',
-        url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA',
+        url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey='+MLAB_API_KEY,
         data: JSON.stringify({
           title      : $('#title').val(),
           link       : $('#link').val(),
