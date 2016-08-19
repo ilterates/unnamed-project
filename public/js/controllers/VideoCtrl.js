@@ -32,8 +32,10 @@ angular.module('VideoCtrl', [])
     }).then(function getSuccessCallback(response) {
       $scope.lenght = Object.keys(response.data).reverse()[0];
       $scope.data = response.data;
-      console.log(response.data[$scope.lenght].link);
-      $scope.url = $sce.trustAsResourceUrl('response.data[$scope.lenght].link');
+      $scope.jeezy = $scope.data[$scope.lenght].link;
+      console.log("this is the json"+response.data[$scope.lenght].link);
+      console.log("this is jeezy"+$scope.jeezy);
+      $scope.url = $sce.trustAsResourceUrl($scope.jeezy);
     }, function getErrorCallback(response) {
       console.log('There was an error getting the data', response);
     });
