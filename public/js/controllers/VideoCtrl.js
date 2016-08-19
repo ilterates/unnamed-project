@@ -22,7 +22,9 @@ angular.module('VideoCtrl', [])
       });
 
   };
+
   $scope.fetch = function () {
+    console.log("is this fetch working?");
     var vm = this;
     $http({
       method: 'GET',
@@ -32,12 +34,12 @@ angular.module('VideoCtrl', [])
       $scope.data = response.data;
       console.log(response.data[$scope.lenght].link);
       $scope.url = $sce.trustAsResourceUrl('response.data[$scope.lenght].link');
-
     }, function getErrorCallback(response) {
       console.log('There was an error getting the data', response);
     });
 
   };
+
 
 
 }]);
