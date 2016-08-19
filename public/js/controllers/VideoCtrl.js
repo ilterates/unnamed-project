@@ -1,6 +1,6 @@
 // public/js/controllers/VideoCtrl.js
 angular.module('VideoCtrl', [])
-  .controller('VideoController', ['$scope', '$http', '$injector', function($scope, $http, $injector) {
+  .controller('VideoController', ['$scope', '$http', '$injector', '$rootScope', function($scope, $http, $injector, $rootScope) {
 
   $scope.posting = function () {
     console.log("testing");
@@ -34,5 +34,15 @@ angular.module('VideoCtrl', [])
   .then(function(response) {
       $scope.myobj = response.data;
   });
+
+  // $scope.delete = function(eid) {
+  //     var tbd = $scope.eid;
+  //     console.log(eid);
+  //     $http.delete('https://api.mlab.com/api/1/databases/unnamed/collections/' + tbd + '?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA')
+  //         .success(function(response) {
+  //             console.log('Deleted');
+  //         });
+  // };
+
 
 }]);
