@@ -3,7 +3,6 @@ angular.module('VideoCtrl', [])
   .controller('VideoController', ['$scope', '$http', '$sce', '$injector', function($scope, $http, $sce, $injector) {
   $scope.posting = function () {
     var vm = this;
-
     console.log("button clicked");
       $http({
         method: 'POST',
@@ -20,7 +19,6 @@ angular.module('VideoCtrl', [])
       }, function postErrorCallback(response) {
         console.log('There was an error posting the data', response);
       });
-
   };
 
   $scope.fetch = function () {
@@ -39,9 +37,6 @@ angular.module('VideoCtrl', [])
     }, function getErrorCallback(response) {
       console.log('There was an error getting the data', response);
     });
-
   };
-
-
 
 }]);
