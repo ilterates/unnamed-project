@@ -44,13 +44,15 @@
     </div>
   </div>
 </div>
-<table class="table table-condensed">
-    <tr ng-repeat="val in myobj">
-        <form>
-            <th>{{val.title}}</th>
-            <th>{{val.link}}</th>
-            <th>{{val.description}}</th>
-            <!-- <th><button class="btn btn-danger " ng-click='delete(eid)'>Delete</button></th> -->
-        </form>
-    </tr>
-</table>
+<div my-youtube code="code"></div>
+
+
+
+<div class="" ng-repeat="vid in newArr track by $index">
+  {{vid}}
+  <source src="{{vid}}"; type="video/mp4"/>
+  <iframe id="player" type="text/html" width="640" height="390"
+    src= {{vid}}
+    frameborder="0">
+  </iframe>
+</div>
