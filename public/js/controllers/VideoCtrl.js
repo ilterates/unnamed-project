@@ -3,7 +3,6 @@ angular.module('VideoCtrl', [])
   .controller('VideoController', ['$scope', '$http', '$injector', function($scope, $http, $injector) {
 
   $scope.posting = function () {
-    console.log("testing");
     var vm = this;
 
     console.log("button clicked");
@@ -31,8 +30,9 @@ angular.module('VideoCtrl', [])
       url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA',
     }).then(function getSuccessCallback(response) {
       $scope.lenght = Object.keys(response.data).reverse()[0];
+      console.log($scope.lenght);
       console.log(response.data[$scope.lenght]);
-
+      // console.log(response.data);
     }, function getErrorCallback(response) {
       console.log('There was an error getting the data', response);
     });
