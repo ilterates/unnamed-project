@@ -5,7 +5,6 @@ angular.module('VideoCtrl', [])
   $scope.posting = function () {
     console.log("testing");
     var vm = this;
-    var newContent = {};
 
     console.log("button clicked");
       $http({
@@ -17,16 +16,28 @@ angular.module('VideoCtrl', [])
           description: $('#description').val()
         }),
         contentType: "application/json"
-      }).then(function successCallback(response) {
+      }).then(function postSuccessCallback(response) {
         console.log(response.data);
-        console.log("success");
-      }, function errorCallback(response) {
+        console.log("post success");
+      }, function postErrorCallback(response) {
         console.log('There was an error posting the data', response);
       });
 
+  };
+  $scope.fetch = function () {
+    var vm = this;
+    $http({
+      method: 'GET',
+      url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=CFYgCuDerS1QjQ7LtxPzDLDR9OcxIyCA',
+    }).then(function getSuccessCallback(response) {
+      var videos = response.data;
+      var today = videos[videos.lenght-1];
+      console.log(today);
+    }, function getErrorCallback(response) {
+      console.log('There was an error getting the data', response);
+    });
 
   };
-  var fake = function(){
-    console.log("testing the function call");
-  };
+
+
 }]);
