@@ -22,8 +22,7 @@ angular.module('VideoCtrl', [])
   };
 
   $scope.fetch = function () {
-    console.log("is this fetch working?");
-    var vm = this;
+    console.log("is this fetch working?")
     $http({
       method: 'GET',
       url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=DtPYymGWE-ferzPHl2eQhkjsh0dH4_54',

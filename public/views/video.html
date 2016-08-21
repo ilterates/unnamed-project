@@ -1,7 +1,7 @@
 <!-- public/views/video.html -->
 
 <div class="jumbotron text-center" data-ng-init="fetch()">
-  <div class="videoShow" ng-repeat="data in data track by $index" ng-show="$last">
+  <div class="videoShow" ng-repeat="data in data track by $index" ng-if="$last">
     <h1>{{data.title}}</h1>
     <span>
       <iframe width="853" height="480" ng-src="{{url}}" frameborder="0"></iframe>
