@@ -2,7 +2,7 @@
     angular
       .module('appRoutes', [])
       .config(['$routeProvider', '$locationProvider',
-        
+
       function($routeProvider, $locationProvider) {
 
     $routeProvider
@@ -24,7 +24,7 @@
             templateUrl: 'views/content.html',
             controller: 'ContentController',
             as: 'ContentCtrl'
-        });
+        }).otherwise({ redirectTo: '/' });
 
     $locationProvider.html5Mode(true);
 
