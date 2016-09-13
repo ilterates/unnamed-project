@@ -16,6 +16,7 @@ angular.module('VideoCtrl', [])
       }).then(function postSuccessCallback(response) {
         console.log(response.data);
         console.log("post success");
+        alert("Success");
       }, function postErrorCallback(response) {
         console.log('There was an error posting the data', response);
       });
