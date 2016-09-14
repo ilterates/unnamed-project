@@ -6,21 +6,15 @@
       function($routeProvider, $locationProvider) {
 
     $routeProvider
-
-        // home page
         .when('/', {
-            templateUrl: 'views/home.html',
-            controller: 'MainController',
-            as: 'MainCtrl'
-        })
-
-        // videos page that will use the VideoController
-        .when('/videos', {
+            templateUrl: 'views/soon.html',
+            controller: 'SoonController',
+            as: 'SoonCtrl'
+        }).when('/videos', {
             templateUrl: 'views/video.html',
             controller: 'VideoController',
             as: 'VideoCtrl'
-        })
-        .when('/content', {
+        }).when('/content', {
             templateUrl: 'views/content.html',
             controller: 'ContentController',
             as: 'ContentCtrl'

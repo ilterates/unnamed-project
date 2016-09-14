@@ -47,7 +47,7 @@ require('./app/routes')(app); // configure our routes
 app.listen(process.env.PORT || port);
 
 // shoutout to the user
-console.log('Magic happens on port ' + port);
+console.log('Phil lives on port ' + port);
 
 // expose app
 exports = module.exports = app;
