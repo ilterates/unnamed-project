@@ -49,3 +49,26 @@ body {
   background-color: #EEEEEE;
   color: #181C1F;
 }
+.about-us-text {
+  background-color: #EEEEEE;
+  color: #181C1F;
+}
+.about-us-message {
+  margin-top: 18%;
+  font-size: 7em;
+  text-align: center;
+}
+.glyphicon-chevron-down {
+  text-align: center;
+  font-size: 5em;
+  display: block;
+  position: fixed;
+  cursor: pointer;
+  left: +49%;
+  top: 90%;
+}
+.devs {
+  height: 1100px;
+  position: absolute;
+  top: 100%;
+}

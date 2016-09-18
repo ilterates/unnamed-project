@@ -18,6 +18,10 @@
             templateUrl: 'views/content.html',
             controller: 'ContentController',
             as: 'ContentCtrl'
+        }).when('/about', {
+            templateUrl: 'views/about.html',
+            controller: 'AboutController',
+            as: 'AboutCtrl'
         }).otherwise({ redirectTo: '/' });
 
     $locationProvider.html5Mode(true);
