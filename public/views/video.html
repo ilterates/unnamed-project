@@ -2,12 +2,14 @@
 
 <div class="text-center" data-ng-init="fetch()">
   <div class="videoShow" ng-repeat="data in data track by $index" ng-if="$last">
-    <h3 class="title">{{data.title}}</h3>
-      <span>
-        <iframe width="853" height="480" ng-src="{{url}}" frameborder="0"></iframe>
-      </span>
-    <p>
-      <!-- {{data.description}} -->
-    </p>
+    <span>
+      <iframe width="853" height="480" ng-src="{{url}}" frameborder="0"></iframe>
+    </span>
+      <div class="info">
+        <h3>{{data.title}}</h3>
+        <p>
+          {{data.description}}
+        </p>
+      </div>
   </div>
 </div>
