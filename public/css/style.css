@@ -1,3 +1,6 @@
+body {
+  background-color: #EEEEEE;
+}
 .coming-soon {
   text-align: center;
   margin-top: 10%;
@@ -29,7 +32,6 @@
   border-left: 0px;
 }
 .nav {
-  border-style: dotted;
   margin-top: 0px;
   width: 100%;
   height: 75px;
@@ -37,4 +39,9 @@
 .nav .name {
   margin-left: 20px;
   font-size: 2.5em;
+}
+.wrapper {
+  background-color: #181C1F;
+  min-width: 100%;
+  color: #EEEEEE;
 }
