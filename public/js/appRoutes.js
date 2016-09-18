@@ -7,9 +7,9 @@
 
     $routeProvider
         .when('/', {
-            templateUrl: 'views/soon.html',
-            controller: 'SoonController',
-            as: 'SoonCtrl'
+            templateUrl: 'views/video.html',
+            controller: 'VideoController',
+            as: 'VideoCtrl'
         }).when('/videos', {
             templateUrl: 'views/video.html',
             controller: 'VideoController',
