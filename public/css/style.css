@@ -45,6 +45,7 @@ body {
   min-width: 100%;
   color: #EEEEEE;
 }
+
 .info {
   background-color: #EEEEEE;
   color: #181C1F;
@@ -72,3 +73,9 @@ body {
   position: absolute;
   top: 100%;
 }
+
+
+/*FOOTER: CSS*/
+/*#footerText {
+  top: +100%;
+}*/
