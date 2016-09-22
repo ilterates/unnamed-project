@@ -93,10 +93,16 @@ html, body {
 }
 
 .site-footer, .page-wrap:after {
-  height: 25px;
+  height:25px;
 }
 
 .site-footer  {
   background: black;
   color: white;
+}
+
+/* this corrects the overlap in "/content" from the last form */
+
+#last-content-field {
+  margin-bottom: 15px;
 }
