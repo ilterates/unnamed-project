@@ -99,6 +99,7 @@ html, body {
 .site-footer  {
   background: black;
   color: white;
+  text-align: center;
 }
 
 /* this corrects the overlap in "/content" from the last form */
