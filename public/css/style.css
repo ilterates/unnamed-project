@@ -4,7 +4,9 @@
 
 html, body {
   height: 100%;
+  overflow: auto;
   background-color: #EEEEEE;
+
 }
 .coming-soon {
   text-align: center;
