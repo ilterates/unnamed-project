@@ -25,9 +25,6 @@ html, body {
   margin-top: 20%;
   margin-bottom: 0%;
 }
-.jumbotron {
-  background-color: white;
-}
 #moving {
  right: -20px;
  bottom: -20px;
@@ -83,24 +80,25 @@ html, body {
 
 
 /*FOOTER: CSS*/
-.page-wrap {
+.footer-pusher {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -25px;
+  
 }
-
-.page-wrap:after {
+.footer-pusher:after {
   content: "";
   margin-bottom: -25px;
 }
 
 .site-footer, .page-wrap:after {
   height:25px;
+  color: #181C1F;
 }
 
 .site-footer  {
-  background: black;
-  color: white;
+  background: #EEEEEE;
+  color: #181C1F;
   text-align: center;
 }
 
