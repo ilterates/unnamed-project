@@ -49,11 +49,20 @@ html, body {
   min-width: 100%;
   color: #EEEEEE;
 }
-
 .info {
   background-color: #EEEEEE;
   color: #181C1F;
+  margin-left: -72%;
 }
+.info .title {
+  font-weight: bolder;
+}
+.video-description  {
+  top: +40px;
+  font-size: 2em;
+
+}
+/*About Us page CSS*/
 .about-us-text {
   background-color: #EEEEEE;
   color: #181C1F;
@@ -78,13 +87,12 @@ html, body {
   top: 100%;
 }
 
-
 /*FOOTER: CSS*/
 .footer-pusher {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -25px;
-  
+
 }
 .footer-pusher:after {
   content: "";
@@ -95,7 +103,18 @@ html, body {
   height:25px;
   color: #181C1F;
 }
+hr {
+  opacity: 70%;
+  border: 0;
+  clear:both;
+  display:block;
+  width: 70%;
+  background-color:#181C1F;
+  height: 1px;
+  text-align:center;
+  margin: 0 auto;
 
+}
 .site-footer  {
   background: #EEEEEE;
   color: #181C1F;
@@ -106,4 +125,10 @@ html, body {
 
 #last-content-field {
   margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 320px) {
+
+   .info { font-size: 0.5em; }
+
 }
