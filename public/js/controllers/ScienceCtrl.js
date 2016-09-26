@@ -1,12 +1,11 @@
 // public/js/controllers/ScienceCtrl.js
 angular.module('ScienceCtrl', [])
   .controller('ScienceController', ['$scope', '$http', '$sce', '$injector', function($scope, $http, $sce, $injector) {
-  $scope.sciencePosting = function () {
-    var vm = this;
+  this.sciencePosting = function () {
     // checks if title and link entered
+    console.log("button clicked");
     if ( $('#scienceTitle').val() !== "" || $('#scienceLink').val() !== "" ) {
     //
-      console.log("button clicked");
       $http({
         method: 'POST',
         url: 'https://api.mlab.com/api/1/databases/unnamed/collections/science?apiKey=DtPYymGWE-ferzPHl2eQhkjsh0dH4_54',
@@ -32,7 +31,7 @@ angular.module('ScienceCtrl', [])
     console.log("is this SCIENCE fetch working?");
     $http({
       method: 'GET',
-      url: 'https://api.mlab.com/api/1/databases/unnamed/collections/content?apiKey=DtPYymGWE-ferzPHl2eQhkjsh0dH4_54',
+      url: 'https://api.mlab.com/api/1/databases/unnamed/collections/science?apiKey=DtPYymGWE-ferzPHl2eQhkjsh0dH4_54',
     }).then(function getSuccessCallback(response) {
       $scope.lenght = Object.keys(response.data).reverse()[0];
       $scope.data = response.data;
@@ -44,5 +43,4 @@ angular.module('ScienceCtrl', [])
       console.log('There was an error getting the data', response);
     });
   };
-
 }]);

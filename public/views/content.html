@@ -21,7 +21,7 @@
             </div>
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label">description</label>
+              <label class="col-md-4 control-label">Description</label>
               <div class="col-md-4">
               <input ng-model="description" type="text" id="description" class="form-control input-md">
               </div>
@@ -35,53 +35,43 @@
             </div>
         </fieldset>
       </form>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <form class="form-horizontal" ng-submit="sciencePosting()">
-        <fieldset>
-          <!-- Form Name -->
-          <legend class="add-text">Add New Science Video</legend>
-          <!-- Text input-->
-          <div class="form-group">
-            <label class="col-md-4 control-label">Title</label>
-            <div class="col-md-4">
-              <input ng-model="scienceTitle" type="text" id="scienceTitle" class="form-control input-md">
+      <div class="science-form" ng-controller="ScienceController as ScienceCtrl" >
+        <form name="ScienceCtrl.form" class="form-horizontal" ng-submit="ScienceCtrl.sciencePosting()">
+          <fieldset>
+            <!-- Form Name -->
+            <legend class="add-text">Add New Science Video</legend>
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label">Title</label>
+              <div class="col-md-4">
+                <input ng-model="scienceTitle" type="text" id="scienceTitle" class="form-control input-md">
+              </div>
             </div>
-          </div>
-          <!-- Text input-->
-          <div class="form-group">
-            <label class="col-md-4 control-label">URL</label>
-            <div class="col-md-4">
-            <input ng-model="scienceLink" type="text" id="scienceLink" class="form-control input-md">
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label">URL</label>
+              <div class="col-md-4">
+              <input ng-model="scienceLink" type="text" id="scienceLink" class="form-control input-md">
+              </div>
             </div>
-          </div>
-          <!-- Text input-->
-          <div class="form-group">
-            <label class="col-md-4 control-label">description</label>
-            <div class="col-md-4">
-            <input ng-model="scienceDescription" type="text" id="scienceDescription" class="form-control input-md">
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label">Description</label>
+              <div class="col-md-4">
+              <input ng-model="scienceDescription" type="text" id="scienceDescription" class="form-control input-md">
+              </div>
             </div>
-          </div>
-          <!-- Button -->
-          <div class="form-group">
-            <label class="col-md-4 control-label">Save</label>
-            <div class="col-md-4">
-              <button type="submit" class="btn btn-primary">Submit</button>
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label">Save</label>
+              <div class="col-md-4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
             </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <form class="form-horizontal" ng-submit="posting()">
+          </fieldset>
+        </form>
+      </div>
+      <form class="form-horizontal" ng-click="posting()">
         <fieldset>
             <!-- Form Name -->
             <legend class="add-text">Add New Funny Picture</legend>
@@ -101,7 +91,7 @@
             </div>
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label">description</label>
+              <label class="col-md-4 control-label">Description</label>
               <div class="col-md-4">
               <input ng-model="description" type="text" id="description" class="form-control input-md">
               </div>
@@ -115,13 +105,7 @@
             </div>
         </fieldset>
       </form>
-    </div>
-  </div>
-</div>
-<div class="container" id="last-content-field">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <form class="form-horizontal" ng-submit="posting()">
+      <form class="form-horizontal" ng-click="posting()">
         <fieldset>
             <!-- Form Name -->
             <legend class="add-text">Add New Music Video</legend>
@@ -141,7 +125,7 @@
             </div>
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label">description</label>
+              <label class="col-md-4 control-label">Description</label>
               <div class="col-md-4">
               <input ng-model="description" type="text" id="description" class="form-control input-md">
               </div>

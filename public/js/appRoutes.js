@@ -14,6 +14,10 @@
             templateUrl: 'views/video.html',
             controller: 'VideoController',
             as: 'VideoCtrl'
+        }).when('/science', {
+              templateUrl: 'views/science.html',
+              controller: 'ScienceController',
+              as: 'ScienceCtrl'
         }).when('/content', {
             templateUrl: 'views/content.html',
             controller: 'ContentController',

@@ -1,0 +1,15 @@
+<!-- public/views/video.html -->
+
+<div class="text-center" data-ng-init="scienceFetch()">
+  <div class="videoShow" ng-repeat="data in data track by $index" ng-if="$last">
+    <span>
+      <iframe width="853" height="480" ng-src="{{url}}" frameborder="0"></iframe>
+    </span>
+      <div class="info">
+        <h1 class="title">{{data.title}}</h1>
+        <p class="video-description">
+          {{data.description}}
+        </p>
+      </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 // public/js/app.js
-var app = angular.module('unnamed', ['ngRoute', 'appRoutes', 'SoonCtrl', 'AboutCtrl', 'VideoCtrl','ContentCtrl', 'VideoService']);
+var app = angular.module('unnamed', ['ngRoute', 'appRoutes', 'SoonCtrl', 'ScienceCtrl', 'AboutCtrl', 'VideoCtrl','ContentCtrl', 'VideoService']);
 
 // var hidden = false;
 // window.setInterval( function() {
