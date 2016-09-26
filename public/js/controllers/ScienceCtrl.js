@@ -23,6 +23,8 @@ angular.module('ScienceCtrl', [])
       }, function postErrorCallback(response) {
         console.log('There was an error posting the data', response);
       });
+    } else {
+     alert("title or link empty");
     }
   };
 
