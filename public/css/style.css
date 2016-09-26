@@ -44,6 +44,16 @@ html, body {
   margin-left: 20px;
   font-size: 2.5em;
 }
+.nav .name-link  {
+  color: #181C1F;
+  text-decoration: none;
+}
+.nav .name-link:active {
+  color: currentColor;
+}
+.nav .name-link:hover {
+  opacity: 50%;
+}
 .wrapper {
   background-color: #181C1F;
   min-width: 100%;
