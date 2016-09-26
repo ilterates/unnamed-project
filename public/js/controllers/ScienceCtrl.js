@@ -3,7 +3,10 @@ angular.module('ScienceCtrl', [])
   .controller('ScienceController', ['$scope', '$http', '$sce', '$injector', function($scope, $http, $sce, $injector) {
   $scope.sciencePosting = function () {
     var vm = this;
-    console.log("button clicked");
+    // checks if title and link entered
+    if ( $('#scienceTitle').val() !== "" || $('#scienceLink').val() !== "" ) {
+    //
+      console.log("button clicked");
       $http({
         method: 'POST',
         url: 'https://api.mlab.com/api/1/databases/unnamed/collections/science?apiKey=DtPYymGWE-ferzPHl2eQhkjsh0dH4_54',
@@ -20,6 +23,7 @@ angular.module('ScienceCtrl', [])
       }, function postErrorCallback(response) {
         console.log('There was an error posting the data', response);
       });
+    }
   };
 
   $scope.scienceFetch = function () {
