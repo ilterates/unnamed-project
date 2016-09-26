@@ -93,7 +93,7 @@ html, body {
 }
 .devs {
   height: 1100px;
-  position: absolute;
+  position: fixed;
   top: 100%;
 }
 
